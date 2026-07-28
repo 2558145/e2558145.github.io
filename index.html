@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界の主力戦車図鑑</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>世界の主力戦車図鑑</h1>
+        <p>World Main Battle Tank Database</p>
+    </header>
+
+    <nav>
+        <a href="#home">ホーム</a>
+        <a href="#tank">戦車紹介</a>
+        <a href="#table">比較表</a>
+        <a href="#about">このサイトについて</a>
+    </nav>
+
+    <main>
+
+        <section id="home">
+
+            <h2>ようこそ</h2>
+
+            <p>
+            このサイトでは世界各国で運用されている代表的な主力戦車を紹介しています。
+            「前へ」「次へ」「ランダム」ボタンを押して様々な戦車を見ることができます。
+            </p>
+
+        </section>
+
+        <section id="tank">
+
+            <h2 id="tankName">M1 Abrams</h2>
+
+            <img
+            id="tankImage"
+            src="images/abrams.jpg"
+            alt="M1 Abrams">
+
+            <p id="tankText">
+            アメリカ軍の主力戦車です。
+            </p>
+
+            <div class="buttons">
+            
+                <button onclick="prevTank()">
+                ◀ 前へ
+                </button>
+
+                <button onclick="nextTank()">
+                次へ ▶
+                </button>
+
+                <button onclick="randomTank()">
+                ランダム
+                </button>
+
+            </div>
+
+            <br>
+
+            <button onclick="darkMode()">
+                🌙 ダークモード
+            </button>
+
+        </section>
+
+        <section id="recommend">
+
+            <h2>
+                今日のおすすめ戦車
+            </h2>
+
+            <p id="recommendTank">
+            Leopard 2
+            </p>
+
+        </section>
+
+        <section id="table">
+
+            <h2>
+                主要戦車比較表
+            </h2>
+
+            <table>
+
+                <tr>
+                    <th>戦車</th>
+                    <th>国</th>
+                    <th>重量</th>
+                    <th>最高速度</th>
+                </tr>
+
+                <tr>
+                    <td>M1 Abrams</td>
+                    <td>アメリカ</td>
+                    <td>66.8t</td>
+                    <td>67km/h</td>
+                </tr>
+
+                <tr>
+                    <td>Leopard 2</td>
+                    <td>ドイツ</td>
+                    <td>64t</td>
+                    <td>68km/h</td>
+                </tr>
+
+                <tr>
+                    <td>90式戦車</td>
+                    <td>日本</td>
+                    <td>50.2t</td>
+                    <td>70km/h</td>
+                </tr>
+
+                <tr>
+                    <td>10式戦車</td>
+                    <td>日本</td>
+                    <td>48t</td>
+                    <td>70km/h</td>
+                </tr>
+
+                <tr>
+                    <td>T-90M</td>
+                    <td>ロシア</td>
+                    <td>48t</td>
+                    <td>60km/h</td>
+                </tr>
+
+                <tr>
+                    <td>Challenger 2</td>
+                    <td>イギリス</td>
+                    <td>62.5t</td>
+                    <td>59km/h</td>
+                </tr>
+
+                <tr>
+                    <td>K2 Black Panther</td>
+                    <td>韓国</td>
+                    <td>55t</td>
+                    <td>70km/h</td>
+                </tr>
+
+                <tr>
+                    <td>Leclerc</td>
+                    <td>フランス</td>
+                    <td>57.4t</td>
+                    <td>72km/h</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <section id="about">
+
+            <h2>
+                このサイトについて
+            </h2>
+
+            <p>
+                このWebサイトはHTML・CSS・JavaScriptを使用して作成しました。
+                JavaScriptでは配列・関数・if文・Math.random()を利用し、
+                ボタン操作によって表示する戦車を切り替えています。
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        世界の主力戦車図鑑
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
